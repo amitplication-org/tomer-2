@@ -9,6 +9,10 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
+import { TomerList } from "./tomer/TomerList";
+import { TomerCreate } from "./tomer/TomerCreate";
+import { TomerEdit } from "./tomer/TomerEdit";
+import { TomerShow } from "./tomer/TomerShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -41,6 +45,13 @@ const App = (): React.ReactElement => {
           edit={UserEdit}
           create={UserCreate}
           show={UserShow}
+        />
+        <Resource
+          name="Tomer"
+          list={TomerList}
+          edit={TomerEdit}
+          create={TomerCreate}
+          show={TomerShow}
         />
       </Admin>
     </div>
